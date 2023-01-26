@@ -3,11 +3,10 @@ import { Outlet } from "react-router-dom";
 const LayoutPublic = () => {
   return (
     <>
-      <nav>Navbar</nav>
-      <main>
+      <main className="container">
         <Outlet />
       </main>
-      <footer>Footer</footer>
+      <footer className="container text-center">Footer</footer>
     </>
   );
 };
