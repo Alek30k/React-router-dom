@@ -9,21 +9,19 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <LayoutPublic />,
+    errorElement: <NotFound />,
     children: [
       {
         path: "/",
         element: <Home />,
-        errorElement: <NotFound />,
       },
       {
         path: "/about",
         element: <About />,
-        errorElement: <NotFound />,
       },
       {
         path: "/blog",
         element: <Blog />,
-        errorElement: <NotFound />,
       },
     ],
   },

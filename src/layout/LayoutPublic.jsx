@@ -1,7 +1,15 @@
-import React from "react";
+import { Outlet } from "react-router-dom";
 
 const LayoutPublic = () => {
-  return <div>LayoutPublic</div>;
+  return (
+    <>
+      <nav>Navbar</nav>
+      <main>
+        <Outlet />
+      </main>
+      <footer>Footer</footer>
+    </>
+  );
 };
 
 export default LayoutPublic;
