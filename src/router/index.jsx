@@ -4,7 +4,7 @@ import About from "../pages/About";
 import Blog, { loaderBlog } from "../pages/Blog";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
-import Post from "../pages/Post";
+import Post, { loaderPost } from "../pages/Post";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +28,7 @@ export const router = createBrowserRouter([
       {
         path: "/blog/:id",
         element: <Post />,
+        loader: loaderPost,
       },
     ],
   },
