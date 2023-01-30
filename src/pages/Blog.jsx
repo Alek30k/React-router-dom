@@ -8,7 +8,9 @@ const Blog = () => {
       {posts.length > 0 ? (
         posts.map((post) => (
           <li key={post.id}>
-            <Link>{post.title}</Link>
+            <Link to={`/blog/${post.id}`}>
+              {post.id} - {post.title}
+            </Link>
           </li>
         ))
       ) : (
