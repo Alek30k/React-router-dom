@@ -11,7 +11,11 @@ export const router = createBrowserRouter([
     path: "/",
     element: <LayoutPublic />,
     errorElement: <NotFound />,
+
     children: [
+      {
+        errorElement: <NotFound />,
+      },
       {
         index: true,
         element: <Home />,
