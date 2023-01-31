@@ -23,6 +23,7 @@ export const loaderPost = async ({ params }) => {
   if (!res.ok)
     throw {
       status: res.status,
+      statusText: "Not found",
     };
 
   const post = await res.json();
